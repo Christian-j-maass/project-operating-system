@@ -1,0 +1,14 @@
+{
+  "ppao-candidate": {
+    "display_name": "PPAO Candidate",
+    "short_description": "Read-only project audit and orchestration",
+    "default_prompt": "Use $ppao-candidate to audit this project in read-only mode and show evidence before recommendations.",
+    "allow_implicit_invocation": false
+  },
+  "token-optimization": {
+    "display_name": "Token Optimization",
+    "short_description": "Reduce token waste without quality loss",
+    "default_prompt": "Use $token-optimization to audit this workflow for token and context waste without reducing quality.",
+    "allow_implicit_invocation": true
+  }
+}

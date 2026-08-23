@@ -1,0 +1,249 @@
+{
+  "registry": {
+    "id": "shared-ai-capabilities",
+    "title": "Gemeinsames Agenten- und Skill-Inventar",
+    "version": "0.1.1-candidate",
+    "updated_at": "2026-08-23",
+    "owner": "Christian Maass",
+    "canonical_repository": "Christian-j-maass/project-operating-system",
+    "canonical_path": "09-capability-registry",
+    "scope": ["Claude local", "Claude Cloud", "ChatGPT", "Codex"],
+    "principles": [
+      "one portable core per capability",
+      "thin host adapters",
+      "evidence-based installation status",
+      "quality before token savings",
+      "no silent activation or mutation"
+    ]
+  },
+  "status_definitions": {
+    "installed-verified": "Installation auf der genannten Oberfläche technisch nachgewiesen",
+    "confirmed-by-owner": "Aktueller Status vom Product Owner bestätigt",
+    "historically-verified-recheck": "Früher nachgewiesen, aktuelle Verifikation erforderlich",
+    "source-ready-activation-pending": "Portables Paket vorhanden, Installation auf der Oberfläche noch offen",
+    "specified-not-packaged": "Fachliche Spezifikation vorhanden, noch kein validiertes Skill-Paket",
+    "planned": "Beschlossen oder empfohlen, aber noch nicht erstellt",
+    "host-dependent": "Kernlogik portabel, Ausführung benötigt plattformspezifische Daten oder Connectoren",
+    "source-required": "Capability beobachtet, kanonische Quelle noch nicht gesichert"
+  },
+  "capabilities": [
+    {
+      "id": "ppao-candidate",
+      "display_name": "PPAO Candidate",
+      "type": "skill",
+      "lifecycle": "candidate-not-final",
+      "version": "1.1.0-candidate.2",
+      "canonical_path": "09-capability-registry/skills/ppao-candidate",
+      "invocation": "explicit-only",
+      "role": ["auditor", "orchestrator", "integrator", "gate-advisor", "process-learner"],
+      "exclusions": ["superagent", "project-manager", "coding-agent", "autonomous-change-agent"],
+      "dependencies": ["grill-me", "teach-me", "token-optimization"],
+      "platforms": {
+        "chatgpt": {"status": "installed-verified", "verified_at": "2026-08-23"},
+        "claude_local": {"status": "source-ready-activation-pending"},
+        "claude_cloud": {"status": "source-ready-activation-pending"}
+      },
+      "evidence": [
+        "PPAO Grill-Me Design Review with 43 decisions, 2026-08-20",
+        "PPAO consolidation architecture, 2026-08-21",
+        "Avenward Shadow Pilot pattern, 2026-08-23",
+        "Product Owner clarification: no superagent, Candidate not final, 2026-08-23"
+      ]
+    },
+    {
+      "id": "token-optimization",
+      "display_name": "Token Optimization",
+      "type": "skill",
+      "lifecycle": "active-portable",
+      "version": "1.1.0-portable.2",
+      "canonical_path": "09-capability-registry/skills/token-optimization",
+      "invocation": "automatic-when-relevant-or-explicit",
+      "quality_constraint": "reduce waste, never necessary analysis",
+      "platforms": {
+        "chatgpt": {"status": "installed-verified", "verified_at": "2026-08-23"},
+        "claude_local": {"status": "source-ready-activation-pending"},
+        "claude_cloud": {"status": "source-ready-activation-pending"}
+      },
+      "source": {
+        "upstream": "valorisa/Claude-Skills",
+        "upstream_commit": "5ac62e2273f2fa9b2c7db3082dfc688509e4f4bb",
+        "license": "MIT",
+        "audited_fork": "Christian-j-maass/-avenward-veterans/docs/claude-code/skill/token-optimization"
+      },
+      "evidence": [
+        "Avenward corrected fork merged to main on 2026-08-23",
+        "Owner reports Claude does not currently know the skill, 2026-08-23",
+        "Portable version removes remaining contradictory legacy examples"
+      ]
+    },
+    {
+      "id": "teach-me",
+      "display_name": "TeachMe",
+      "type": "skill",
+      "lifecycle": "specified",
+      "version": "3.0-documentation",
+      "canonical_source": "Skills_ChatGPT_Claude_Copilot_Version_3.docx",
+      "platforms": {
+        "chatgpt": {"status": "specified-not-packaged"},
+        "claude_local": {"status": "specified-not-packaged"},
+        "claude_cloud": {"status": "specified-not-packaged"}
+      },
+      "next_step": "portable package in priority point 2"
+    },
+    {
+      "id": "grill-me",
+      "display_name": "GrillMe",
+      "type": "skill",
+      "lifecycle": "specified",
+      "version": "3.0-documentation",
+      "canonical_source": "Skills_ChatGPT_Claude_Copilot_Version_3.docx",
+      "platforms": {
+        "chatgpt": {"status": "specified-not-packaged"},
+        "claude_local": {"status": "historically-verified-recheck"},
+        "claude_cloud": {"status": "historically-verified-recheck", "evidence_date": "2026-08-19"}
+      },
+      "next_step": "portable package and selected Grill-with-docs additions in priority points 2 and 3"
+    },
+    {
+      "id": "vermenschlichen",
+      "display_name": "Vermenschlichen",
+      "type": "skill",
+      "lifecycle": "specified",
+      "version": "3.0-documentation",
+      "canonical_source": "Skills_ChatGPT_Claude_Copilot_Version_3.docx",
+      "platforms": {
+        "chatgpt": {"status": "specified-not-packaged"},
+        "claude_local": {"status": "specified-not-packaged"},
+        "claude_cloud": {"status": "specified-not-packaged"}
+      },
+      "next_step": "portable package and localized Unslop additions in priority points 2 and 3"
+    },
+    {
+      "id": "projekt-neustart",
+      "display_name": "Projekt Neustart",
+      "type": "skill",
+      "lifecycle": "specified",
+      "version": "3.0-documentation",
+      "canonical_source": "Skills_ChatGPT_Claude_Copilot_Version_3.docx",
+      "platforms": {
+        "chatgpt": {"status": "specified-not-packaged"},
+        "claude_local": {"status": "specified-not-packaged"},
+        "claude_cloud": {"status": "specified-not-packaged"}
+      },
+      "next_step": "portable package in priority point 2"
+    },
+    {
+      "id": "projektmanagement",
+      "display_name": "Projektmanagement",
+      "type": "skill",
+      "lifecycle": "specified",
+      "version": "3.0-documentation",
+      "canonical_source": "Skills_ChatGPT_Claude_Copilot_Version_3.docx",
+      "platforms": {
+        "chatgpt": {"status": "specified-not-packaged"},
+        "claude_local": {"status": "specified-not-packaged"},
+        "claude_cloud": {"status": "specified-not-packaged"}
+      },
+      "next_step": "portable package in priority point 2"
+    },
+    {
+      "id": "executive-powerpoint",
+      "display_name": "Executive PowerPoint",
+      "type": "agent-specification",
+      "lifecycle": "specified",
+      "canonical_source": "Copilot_Agent_Builder_PowerPoint_kopierfertig_V3.docx",
+      "platforms": {
+        "chatgpt": {"status": "host-dependent"},
+        "claude_local": {"status": "host-dependent"},
+        "claude_cloud": {"status": "host-dependent"}
+      },
+      "next_step": "connect to shared brand-system in priority point 4"
+    },
+    {
+      "id": "business-powerpoint",
+      "display_name": "Business PowerPoint",
+      "type": "agent-specification",
+      "lifecycle": "specified",
+      "canonical_source": "Copilot_Agent_Builder_PowerPoint_kopierfertig_V3.docx",
+      "platforms": {
+        "chatgpt": {"status": "host-dependent"},
+        "claude_local": {"status": "host-dependent"},
+        "claude_cloud": {"status": "host-dependent"}
+      },
+      "next_step": "connect to shared brand-system in priority point 4"
+    },
+    {
+      "id": "sharepoint-outlook-document-search",
+      "display_name": "SharePoint & Outlook Document Search",
+      "type": "agent-specification",
+      "lifecycle": "specified",
+      "canonical_source": "MS365_Copilot_Agent_SharePoint_Outlook_Dokumentensuche_v2.pptx",
+      "platforms": {
+        "chatgpt": {"status": "host-dependent"},
+        "claude_local": {"status": "host-dependent"},
+        "claude_cloud": {"status": "host-dependent"}
+      },
+      "constraint": "functional parity requires authorized Microsoft 365 connectors"
+    },
+    {
+      "id": "avenward-veterans-review",
+      "display_name": "Avenward Veterans Review",
+      "type": "project-skill",
+      "lifecycle": "observed-source-review-required",
+      "platforms": {
+        "chatgpt": {"status": "source-required"},
+        "claude_local": {"status": "historically-verified-recheck"},
+        "claude_cloud": {"status": "historically-verified-recheck", "evidence_date": "2026-08-19"}
+      },
+      "next_step": "capture and compare source before cross-platform rollout"
+    },
+    {
+      "id": "morning",
+      "display_name": "Morning",
+      "type": "skill",
+      "lifecycle": "observed-source-missing",
+      "platforms": {
+        "chatgpt": {"status": "source-required"},
+        "claude_local": {"status": "source-required"},
+        "claude_cloud": {"status": "historically-verified-recheck", "evidence_date": "2026-08-19"}
+      },
+      "next_step": "obtain source, owner intent and scope before synchronization"
+    },
+    {
+      "id": "image-provider",
+      "display_name": "Image Provider Contract",
+      "type": "adapter-contract",
+      "lifecycle": "planned",
+      "providers": {
+        "claude": {"provider": "kie.ai", "logical_skill": "higgsfield-skill", "status": "confirmed-by-owner", "coverage": ["local", "cloud"]},
+        "chatgpt": {"provider": "native ImageGen", "status": "available"},
+        "optional": {"provider": "Higgsfield", "status": "fallback-only"}
+      },
+      "next_step": "formalize common input, output, quality and provenance contract in priority point 6"
+    },
+    {
+      "id": "brand-system",
+      "display_name": "Brand System",
+      "type": "skill",
+      "lifecycle": "planned",
+      "platforms": {"chatgpt": {"status": "planned"}, "claude_local": {"status": "planned"}, "claude_cloud": {"status": "planned"}},
+      "next_step": "priority point 4"
+    },
+    {
+      "id": "web-quality-gate",
+      "display_name": "Web Quality Gate",
+      "type": "project-module",
+      "lifecycle": "planned",
+      "platforms": {"chatgpt": {"status": "planned"}, "claude_local": {"status": "planned"}, "claude_cloud": {"status": "planned"}},
+      "next_step": "priority point 5"
+    },
+    {
+      "id": "ai-content-transparency",
+      "display_name": "AI Content Transparency",
+      "type": "project-module",
+      "lifecycle": "planned",
+      "platforms": {"chatgpt": {"status": "planned"}, "claude_local": {"status": "planned"}, "claude_cloud": {"status": "planned"}},
+      "next_step": "priority point 5"
+    }
+  ]
+}
