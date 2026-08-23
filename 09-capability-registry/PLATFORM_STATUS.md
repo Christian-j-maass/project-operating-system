@@ -1,7 +1,7 @@
 # Plattformstatus – Claude und ChatGPT
 
 Stand: 23.08.2026  
-Registry: 0.1.0-candidate
+Registry: 0.1.1-candidate
 
 ## Aktueller Nachweis
 
