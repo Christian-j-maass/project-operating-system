@@ -20,16 +20,19 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def frontmatter_name(skill_md: Path) -> str:
+def frontmatter_value(skill_md: Path, key: str) -> str:
     lines = skill_md.read_text(encoding="utf-8").splitlines()
     if not lines or lines[0] != "---":
         raise ValueError(f"Missing frontmatter: {skill_md}")
     for line in lines[1:]:
         if line == "---":
             break
-        if line.startswith("name:"):
-            return line.split(":", 1)[1].strip().strip('"')
-    raise ValueError(f"Missing name: {skill_md}")
+        if line.startswith(f"{key}:"):
+            raw = line.split(":", 1)[1].strip()
+            if raw.startswith('"'):
+                return json.loads(raw)
+            return raw.strip("'")
+    raise ValueError(f"Missing {key}: {skill_md}")
 
 
 def add_claude_overlay(skill_md: Path, overlay: dict) -> None:
@@ -65,9 +68,17 @@ def build_target(target: str, output_root: Path, make_zip: bool) -> None:
     target_root.mkdir(parents=True, exist_ok=True)
 
     for source in sorted(path for path in SKILLS_ROOT.iterdir() if path.is_dir()):
-        name = frontmatter_name(source / "SKILL.md")
+        skill_md = source / "SKILL.md"
+        name = frontmatter_value(skill_md, "name")
+        description = frontmatter_value(skill_md, "description")
         if name != source.name:
             raise ValueError(f"Folder/name mismatch: {source.name} != {name}")
+        if target == "claude" and len(name) > 64:
+            raise ValueError(f"Claude skill name exceeds 64 characters: {name}")
+        if target == "claude" and len(description) > 200:
+            raise ValueError(
+                f"Claude skill description exceeds 200 characters ({len(description)}): {name}"
+            )
         destination = target_root / name
         if destination.exists():
             shutil.rmtree(destination)

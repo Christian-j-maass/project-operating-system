@@ -1,6 +1,6 @@
 ---
 name: ppao-candidate
-description: "PPAO (Project Process Auditor & Optimizer) als nicht-finaler, explizit aufrufbarer Auditor, Orchestrator und Integrator. Nur verwenden, wenn der Nutzer PPAO ausdrücklich nennt oder einen PPAO-Shadow-Audit, Projekt-Audit, Änderungs-, Prozess-, Release-, Entscheidungs-, Anforderungs- oder Scope-Review beauftragt. Nicht als Superagent, Projektleiter oder autonomen Änderungsagent verwenden."
+description: "PPAO Candidate für explizite, read-only Projekt-, Prozess-, Release-, Scope- und Governance-Audits. Auditor, Orchestrator und Integrator; kein Superagent, Projektleiter oder Änderungsagent."
 ---
 
 # PPAO Candidate

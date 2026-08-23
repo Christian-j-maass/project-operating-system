@@ -1,6 +1,6 @@
 ---
 name: token-optimization
-description: "Token- und Kontexteffizienz für ChatGPT/Codex und Claude verbessern, ohne Qualität zu reduzieren. Verwenden bei Tokenverbrauch, Kosten, Budget, Effizienz, Kontextfenster, Context Bloat, Cache, Compaction, großen Dateien, wiederholter Recherche, langen Tool-Ausgaben, unnötigen Agenten oder formalen Effizienzvergleichen. Auch bei entsprechenden Symptomen anwenden. Evidenz, Tests, Traceability und vollständige Liefergegenstände immer bewahren."
+description: "Reduziert Token-, Kontext- und Tool-Overhead in Claude und ChatGPT ohne Qualitätsverlust. Nutzen bei Tokenkosten, Context Bloat, Compaction, großen Dateien, langen Outputs oder Effizienzvergleichen."
 ---
 
 # Token Optimization

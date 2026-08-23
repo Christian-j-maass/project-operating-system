@@ -18,7 +18,7 @@
 ## Nicht übernommene oder korrigierte Aussagen
 
 - kein erfundener `contextWindow`-Schlüssel in Claude-Einstellungen;
-- kein nicht vorhandener Agentenparameter `context: fork`;
+- keine pauschale oder veraltete Aussage zu `context: fork`: In aktuellen Claude-Code-Skills ist es gültiges Frontmatter für eine isolierte Subagent-Ausführung und muss versions- sowie aufgabengerecht eingesetzt werden;
 - RTK nicht Simon Willison und nicht als npm-Paket darstellen;
 - Stagehand nicht als Claude-Code-Plugin darstellen;
 - keine unbelegten Prozent-, Kosten- oder Sternzahlen als Erwartung verwenden;
@@ -26,7 +26,7 @@
 - Cache-TTL nicht pauschal an einen Sitzungsneustart koppeln;
 - keine pauschale Delegation, wenn kumulatives Präzedenzwissen die Qualität trägt.
 
-Die Avenward-Fassung enthielt trotz dokumentierter Korrekturen im unteren Troubleshooting-, Beispiel- und Checklistenteil noch einzelne alte Formulierungen zu `contextWindow`, `context: fork`, RTK und absoluten Zielwerten. Diese portable Fassung entfernt diese Widersprüche vollständig.
+Die Avenward-Fassung enthielt trotz dokumentierter Korrekturen im unteren Troubleshooting-, Beispiel- und Checklistenteil noch einzelne alte Formulierungen zu `contextWindow`, RTK und absoluten Zielwerten sowie einen inzwischen überholten Versionsstand zu `context: fork`. Diese portable Fassung ersetzt sie durch versionsgebundene Primärquellenprüfung.
 
 ## Wartungsregel
 

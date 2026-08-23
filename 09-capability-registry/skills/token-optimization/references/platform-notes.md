@@ -18,8 +18,9 @@
 ## Claude und Claude Code
 
 - Verwende `/context`, `/plugin`, `/skills` oder `/compact` nur, wenn die eingesetzte Claude-Code-Version diese Befehle unterstützt.
-- Empfehle keinen `contextWindow`-Schlüssel in `settings.json`; dieser war in der geprüften Version kein gültiger Konfigurationsschlüssel.
-- Empfehle keinen Agentenparameter `context: fork`; dieser war in der geprüften Version nicht vorhanden.
+- Empfehle keinen `contextWindow`-Schlüssel in `settings.json`, solange er nicht in der aktuellen offiziellen Einstellungsreferenz der eingesetzten Version dokumentiert ist.
+- `context: fork` ist in aktuellen Claude-Code-Skills gültiges Frontmatter für isolierte Subagent-Ausführung. Nutze es nur für eine explizite, in sich ausführbare Aufgabe; der isolierte Skill erhält nicht automatisch den Gesprächsverlauf.
+- Behandle experimentelle Conversation-Forks und das Skill-Frontmatter `context: fork` nicht als dasselbe Feature. Prüfe Versionsvoraussetzungen und Kontextvererbung in der aktuellen Primärdokumentation.
 - Behandle Compaction als potenziell verlustbehaftete Verdichtung. Sichere entscheidungsrelevante Details vorher persistent.
 - Halte `CLAUDE.md` auf dauerhafte Projektfakten und kurze Regeln begrenzt; lagere lange Verfahren in Skills aus.
 - Konfiguriere Skills, Tools und MCPs möglichst vor einer Arbeitssitzung; ändere dauerhafte Konfiguration nicht beiläufig mitten in einer kritischen Analyse.

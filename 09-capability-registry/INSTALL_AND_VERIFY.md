@@ -68,7 +68,7 @@ Erwartet:
 - Qualitätsgrenze zuerst;
 - messbare statt erfundener Einsparwerte;
 - selektives Retrieval und deterministische Prüfungen;
-- keine veralteten `contextWindow`- oder `context: fork`-Empfehlungen;
+- keine ungeprüften Host-Einstellungen; `context: fork` nur nach aktueller Claude-Code-Dokumentation und für passende isolierte Aufgaben;
 - vollständige Evidenz, Tests und Liefergegenstände.
 
 ## Statusaktualisierung
