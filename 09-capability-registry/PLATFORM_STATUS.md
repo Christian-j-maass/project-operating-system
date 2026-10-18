@@ -34,3 +34,10 @@ Eine Capability gilt nur als installiert, wenn die konkrete Oberfläche einen da
 2. Beide getrennt in Claude Cloud aktivieren.
 3. Installationsnachweise im Manifest auf `installed-verified` setzen.
 4. Danach die fünf Kernskills paketieren und plattformweise ausrollen.
+
+## Ergänzung 18.10.2026 – website-bauen
+
+Claude lokal: Installation unbestätigt. Claude Cloud: Installation unbestätigt.
+ChatGPT Work: in dieser Sitzung gelistet und gelesen; Persistenz und Gleichheit
+mit Upstream nicht belegt. Kein weiterer Installationsversuch durchgeführt.
+Details: [WEBSITE_BAUEN_VERIFICATION.md](WEBSITE_BAUEN_VERIFICATION.md).

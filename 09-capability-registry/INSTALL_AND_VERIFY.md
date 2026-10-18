@@ -74,3 +74,10 @@ Erwartet:
 ## Statusaktualisierung
 
 Nach jeder Installation Datum, Oberfläche, Version und Verifikationsnachweis in `capability-manifest.json` ergänzen. Nie mehrere Oberflächen aus einem einzigen Test ableiten.
+
+## Externer Skill website-bauen
+
+Nicht mit dem Paket-Builder installieren. Quelle, getrennte Statusnachweise und
+Aufrufregeln stehen im Manifest; Bestandsprüfung und Abnahmematrix in
+[WEBSITE_BAUEN_VERIFICATION.md](WEBSITE_BAUEN_VERIFICATION.md).
+Automatisierte Vertragsprüfung: `python -m unittest discover -s 09-capability-registry/tests`.
