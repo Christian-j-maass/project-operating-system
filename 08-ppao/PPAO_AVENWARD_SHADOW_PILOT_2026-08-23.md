@@ -1,5 +1,14 @@
 # PPAO – Avenward Veterans Shadow Pilot
 
+> **Status: HISTORISCHER ORIGINALSTAND – ausschließlich zur Dokumentation archiviert (02.11.2026).**
+>
+> Die folgenden Aussagen, Planungen und damaligen Freigaben dokumentieren den Stand des jeweiligen August-Datums. Sie sind kein aktueller Arbeitsauftrag und keine erneuerte Pilot-, Installations-, Audit- oder Produktivfreigabe. Maßgeblich ist die [Dokumentationsentscheidung PPAO-DEC-001](README.md).
+>
+> Die aktuelle Candidate-Fassung ist in der [Capability Registry](../09-capability-registry/skills/ppao-candidate/SKILL.md) beschrieben; zugehörig sind [Governancebaseline](../09-capability-registry/skills/ppao-candidate/references/governance-baseline.md), [Auditvertrag](../09-capability-registry/skills/ppao-candidate/references/audit-contract.md) und [Shadow-Regeln](../09-capability-registry/skills/ppao-candidate/references/shadow-mode.md). Auch diese Verweise erteilen keinen Einsatzauftrag. Nutzen, Konsequenzen und frühere aufwendige Rückfragen müssen vor einer gesonderten Einsatzentscheidung gemeinsam geklärt werden.
+
+## Historischer Originaltext
+
+
 **Geplanter Pilot:** nächste State-Analyse ab 2026-08-23  
 **Status:** freigegebene Pilot-Baseline, PPAO weiterhin nicht produktiv/live  
 **Projekt:** `Christian-j-maass/-avenward-veterans`  

@@ -30,6 +30,8 @@ Eine Entscheidung, Anforderung oder Arbeitsweise gilt erst dann als dauerhaft ge
 - `05-lessons-learned/` – dokumentierte Ursachen, Maßnahmen und Wirksamkeitskontrolle
 - `06-templates/` – wiederverwendbare Vorlagen
 - `07-project-adoption/` – Übernahme des Standards in konkrete Projekte
+- [`08-ppao/`](08-ppao/README.md) – historische PPAO-Dokumentation und aktuelle Entscheidung: Dokumentationsübernahme ohne Aktivierung
+- `09-capability-registry/` – dokumentierte plattformübergreifende Capability- und Candidate-Fassungen
 
 ## Aktueller Sicherheitshinweis
 

@@ -1,0 +1,6 @@
+{
+  "ppao-candidate": {
+    "disable-model-invocation": true
+  },
+  "token-optimization": {}
+}
