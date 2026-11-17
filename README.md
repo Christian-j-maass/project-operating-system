@@ -1,6 +1,7 @@
 # Project Operating System
 
-Version: 1.0-alpha  
+Version: 1.1-alpha
+
 Status: Aufbau  
 Owner / Product Owner: Christian Maass  
 Prozessverantwortung: Scrum Master / ChatGPT
@@ -20,6 +21,21 @@ Dieses Repository ist die verbindliche Quelle für die gemeinsame Projektarbeits
 ## Verbindliche Grundregel
 
 Eine Entscheidung, Anforderung oder Arbeitsweise gilt erst dann als dauerhaft gesichert, wenn sie im zuständigen Projekt-Repository oder in diesem Repository dokumentiert wurde. Chat-Inhalte allein gelten nicht als belastbare Projektdokumentation.
+
+## Einstieg in die Zusammenarbeit
+
+Der kurze gemeinsame Kern steht in [AGENTS.md](AGENTS.md). Die
+[Entscheidung POS-DEC-001](03-decision-management/POS-DEC-001-VERIFIED-COLLABORATION.md)
+dokumentiert die beauftragte Umsetzung vom 17.11.2026. Die neueste ausdrückliche
+Nutzerentscheidung gilt sofort; ihre dauerhafte Dokumentation wird nachgeführt.
+
+- [Einbindung, Plattformstatus und ChatGPT-Anleitung](07-project-adoption/COLLABORATION-ADOPTION.md)
+- [Kopiertext für persönliche ChatGPT-Anweisungen](07-project-adoption/CHATGPT-INSTRUCTIONS.txt)
+- [Drei Anwendungsproben und Grenzen des Wirksamkeitsnachweises](04-quality/COLLABORATION-PILOT.md)
+
+Die Repository-Einbindung ist vom kontoweiten oder projektübergreifenden Rollout
+zu unterscheiden. Die vorhandenen PPAO-Grenzen gelten weiterhin. Dieser
+Lieferstand macht aus der Alpha-Fassung keine allgemein abgenommene Version 1.0.
 
 ## Struktur
 
