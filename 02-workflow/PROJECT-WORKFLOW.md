@@ -1,7 +1,20 @@
 # Verbindlicher Projektworkflow
 
-Version: 1.0-alpha  
-Gültig ab: 2026-08-01
+Version: 1.1-alpha
+
+Aktualisiert: 2026-11-17
+
+Gemeinsamer Einstieg: [AGENTS.md](../AGENTS.md). Grundlage dieser Ergänzung:
+[POS-DEC-001](../03-decision-management/POS-DEC-001-VERIFIED-COLLABORATION.md).
+
+## Angemessene Tiefe
+
+Die vollständige Projektstruktur unten gilt für langfristige Projekte. Eine
+eindeutige Routinekorrektur benötigt nur Ziel, betroffene Version und einen
+passenden Ergebnischeck. Wesentliche Entscheidungen benötigen zusätzlich
+Alternativen, einen belegbaren Gegencheck und verbleibende Unsicherheiten.
+Zusätzliche Agenten sind kein Standardschritt. Fehlende Formalien werden nicht
+zu künstlichen Blockern für bereits autorisierte, reversible Routinearbeit.
 
 ## 1. Projektstart
 
@@ -24,6 +37,7 @@ Ohne diese Minimalstruktur darf nur explorative Vorarbeit erfolgen. Explorative 
 
 Bei Widersprüchen gilt folgende Reihenfolge:
 
+0. neueste ausdrückliche Product-Owner-Entscheidung innerhalb höherrangiger Grenzen; Dokumentation unmittelbar nachführen
 1. freigegebene Baseline-Dokumente im Projekt-Repository
 2. aktive Einträge im Decision Log
 3. freigegebene Anforderungen und Issues
@@ -31,6 +45,8 @@ Bei Widersprüchen gilt folgende Reihenfolge:
 5. Chat-Verlauf
 
 Chat-Erinnerungen dürfen keine dokumentierte Baseline still überschreiben.
+Ein eindeutig neuer ausdrücklicher Auftrag ist von einer bloßen Chat-Erinnerung
+zu unterscheiden. Vorhandene Freigaben werden nicht erneut abgefragt.
 
 ## 3. Arbeitseingang
 
@@ -58,6 +74,11 @@ Jeder Arbeitszyklus folgt dieser Pipeline:
 6. **Bericht** – Lieferstand, offene Punkte und nächste Priorität melden
 
 Kein Schritt gilt als abgeschlossen, wenn die Dokumentation fehlt.
+Die Dokumentation bleibt proportional: Für Routinearbeit genügt der kurze
+Änderungs- und Prüfnachweis. Bei wesentlichen Lieferständen wird je Kriterium
+die tatsächlich geprüfte Version, Methode, das Ergebnis und eine mögliche
+Prüfgrenze erfasst. Nach Korrekturen werden auch betroffene frühere Kriterien
+erneut kontrolliert.
 
 ## 5. Begrenzung paralleler Arbeit
 

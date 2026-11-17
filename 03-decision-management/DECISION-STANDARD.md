@@ -1,11 +1,29 @@
 # Decision Management Standard
 
-Version: 1.0-alpha  
-Gültig ab: 2026-08-01
+Version: 1.1-alpha
+
+Aktualisiert: 2026-11-17
 
 ## Ziel
 
 Bereits getroffene Entscheidungen müssen auffindbar, eindeutig, wirksam und änderbar sein, ohne dass frühere Stände verloren gehen.
+
+## Qualität einer Empfehlung
+
+Bei wesentlichen Entscheidungen enthält die Vorlage:
+
+- die entscheidungstragenden Fakten mit Quelle und Aktualität,
+- offene Annahmen und ihre Auswirkung, falls sie falsch sind,
+- die wichtigsten realistischen Alternativen,
+- den stärksten belegbaren Einwand gegen die empfohlene Option,
+- die Information oder Bedingung, die die Empfehlung ändern würde,
+- einen konkreten nächsten Schritt.
+
+Nutze das Schema proportional. Erfinde keine Gegenargumente, um eine Rolle zu
+füllen. Rollenwechsel und ein simuliertes Gremium sind Perspektivhilfen, keine
+unabhängigen Nachweise. Mehrere übereinstimmende Modellantworten ersetzen keine
+Quellen- oder Ergebnisprüfung. Wenn eine unabhängige Prüfung erforderlich ist,
+muss ihr tatsächlicher Auftrag, Kontext und Ergebnis nachvollziehbar sein.
 
 ## Entscheidungs-ID
 
@@ -49,6 +67,10 @@ Jeder Entscheidungseintrag enthält:
 ## Verbindlichkeitsregel
 
 Nur Entscheidungen mit Status `ACCEPTED` sind verbindlich. Sie dürfen weder im Chat noch bei einer neuen Umsetzung still verändert werden.
+Eine neue ausdrückliche Product-Owner-Entscheidung gilt operativ sofort und wird
+anschließend mit Datum und Auswirkungen nachgeführt. Bereits vorhandene
+Autorisierung wird nicht allein wegen eines weiteren Prozessschritts erneut
+abgefragt.
 
 ## Prüfung vor neuer Product-Owner-Frage
 

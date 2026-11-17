@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Website-Aufgaben: Skill laden und nachweisen
 
 Bei Website-Erstellung, vollständiger Überarbeitung, ausdrücklichem Aufruf von
